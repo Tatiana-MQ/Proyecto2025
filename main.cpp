@@ -3,8 +3,6 @@
 #include <vector>   // Profe, esto lo agregue para usar vectores dinamicos
 #include <iomanip>  // Profe, esto lo agregue para alinear columnas con setw, o ordenar bien a la hora de dar aprobados y reporbados, con sus datos
 #include <cctype>   // Profe, esto es para usar isalpha e isdigit o lo de ordenar bien 
-#include <limits>   // Profe, esto es otra libreria estándar de C++ para manejar límites y propiedades de tipos de datos, usada para limpiar el buffer de entrada
-#undef max          // Profe, con esto se evita error de linea con max
 
 using namespace std;
 
