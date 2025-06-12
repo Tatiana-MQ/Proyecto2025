@@ -24,6 +24,7 @@ bool soloDigitosUNA(const string& textoUNA) {
 }
 
 int main() {
+
     // Aca creamos los vectores para almacenar datos de los estudiantes
     vector<string> nombresUNA;
     vector<string> primerApellidoUNA;
@@ -34,6 +35,7 @@ int main() {
     vector<float> promediosUNA;
     vector<string> estadosUNA;
     // Ahora le dimos tamaño a los vectores segun la cantidad de estudiantes
+
     nombresUNA.resize(cantidaddeestudiantesUNA);
     primerApellidoUNA.resize(cantidaddeestudiantesUNA);
     segundoApellidoUNA.resize(cantidaddeestudiantesUNA);
@@ -63,6 +65,7 @@ int main() {
         }
 
         while (true) {
+
             cout<< endl;
             cout << "Ingrese el primer apellido:";
             getline(cin, primerApellidoUNA[numeroestudianteUNA]);
@@ -75,6 +78,7 @@ int main() {
         }
 
         while (true) {
+
             cout<< endl;
             cout << "Ingrese el segundo apellido:";
             getline(cin, segundoApellidoUNA[numeroestudianteUNA]);
@@ -121,6 +125,5 @@ int main() {
                 break;
             }
         }
-
     return 0;
 }
