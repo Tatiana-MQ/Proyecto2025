@@ -25,8 +25,8 @@ bool soloDigitosUNA(const string& textoUNA) {
     return true;
 }
 
-int main() {
-
+int main()
+{
     int cantidaddeestudiantesUNA = 0;
     int intentosUNA = 0;
     const int maxIntentosUNA = 5;         // Aca es lo de maximo 5 intentos para ingresar bien
@@ -227,6 +227,5 @@ int main() {
         }
         return 0;
     }
-
 
 
