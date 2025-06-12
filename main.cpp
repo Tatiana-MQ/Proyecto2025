@@ -1,3 +1,4 @@
+//Tati
 #include <iostream> // Profe, esto es una libreria para usar cout y cin
 #include <string>   // Profe, esto es una libreria para usar textos digamos los strings
 #include <vector>   // Profe, esto lo agregue para usar vectores dinamicos
@@ -24,7 +25,6 @@ bool soloDigitosUNA(const string& textoUNA) {
 }
 
 int main() {
-
     // Aca creamos los vectores para almacenar datos de los estudiantes
     vector<string> nombresUNA;
     vector<string> primerApellidoUNA;
@@ -63,9 +63,7 @@ int main() {
                 break;
             }
         }
-
         while (true) {
-
             cout<< endl;
             cout << "Ingrese el primer apellido:";
             getline(cin, primerApellidoUNA[numeroestudianteUNA]);
@@ -76,7 +74,6 @@ int main() {
                 break;
             }
         }
-
         while (true) {
 
             cout<< endl;
@@ -98,17 +95,14 @@ int main() {
             cin >> ciclosUNA[numeroestudianteUNA];
 
             if (cin.fail() || ciclosUNA[numeroestudianteUNA] < 1 || ciclosUNA[numeroestudianteUNA] > 8) {
-                
                 cout<< endl;
                 cout << "Error, en la UNA no existe este ciclo, solo del 1 al 8\n";
-                
                 cin.clear();
                 cin.ignore(1000, '\n');
             } else {
                 break;
             }
         }
-
         while (true) {
             string cedulaTemporalUNA;
             cout<< endl;
