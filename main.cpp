@@ -10,7 +10,7 @@ using namespace std;
 // Esto es una funcion para validar que un string tenga solo letras y no tenga espacios
 bool soloLetrasSinEspaciosUNA(const string &textoUNA)
 {
-    
+
     for (char letraUNA : textoUNA)
     {
         if (!isalpha(letraUNA))
@@ -137,4 +137,5 @@ int main()
     }
 
     return 0;
+    
 }
