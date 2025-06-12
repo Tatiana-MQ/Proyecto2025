@@ -1,33 +1,26 @@
 #include <iostream> // Profe, esto es una libreria para usar cout y cin
 #include <string>   // Profe, esto es una libreria para usar textos digamos los strings
+#include <vector>   // Profe, esto lo agregue para usar vectores dinamicos
 #include <iomanip>  // Profe, esto lo agregue para alinear columnas con setw, o ordenar bien a la hora de dar aprobados y reporbados, con sus datos
-#include <cctype>   // Profe, esto es para usar isalpha e isdigit o lo de ordenar bien
+#include <cctype>   // Profe, esto es para usar isalpha e isdigit o lo de ordenar bien 
 #include <limits>   // Profe, esto es otra libreria estándar de C++ para manejar límites y propiedades de tipos de datos, usada para limpiar el buffer de entrada
 #undef max          // Profe, con esto se evita error de linea con max
 
 using namespace std;
 
 // Esto es una funcion para validar que un string tenga solo letras y no tenga espacios
-bool soloLetrasSinEspaciosUNA(const string &textoUNA)
-{
-
-    for (char letraUNA : textoUNA)
-    {
-        if (!isalpha(letraUNA))
-            return false; // Si hay algo que no sea letra, falso
+bool soloLetrasSinEspaciosUNA(const string& textoUNA) {
+    for (char letraUNA : textoUNA) {
+        if (!isalpha(letraUNA)) return false;  // Si hay algo que no sea letra, falso
     }
-    if (textoUNA.find(' ') != string::npos)
-        return false; // Si hay espacios, falso
+    if (textoUNA.find(' ') != string::npos) return false; // Si hay espacios, falso
     return true;
 }
 
 // Funcion para validar que un string tenga solo digitos
-bool soloDigitosUNA(const string &textoUNA)
-{
-    for (char caracterUNA : textoUNA)
-    {
-        if (!isdigit(caracterUNA))
-            return false;
+bool soloDigitosUNA(const string& textoUNA) {
+    for (char caracterUNA : textoUNA) {
+        if (!isdigit(caracterUNA)) return false;
     }
     return true;
 }
@@ -136,6 +129,3 @@ int main()
         }
     }
     return 0;
-    
-}
-
