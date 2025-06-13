@@ -60,7 +60,7 @@ int main()
     {
         cout << endl;
         cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬" << endl;
-        cout << "Ingrese el numero de estudiantes para agregar sus notas (entre 1 y " << limiteestudiantesUNA << "): \n";
+        cout << "Ingrese el numero de estudiantes para agregar sus notas (entre 1 y " << limiteestudiantesUNA << "):";
         cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬" << endl;
         cin >> cantidaddeestudiantesUNA;
 
@@ -191,9 +191,9 @@ int main()
         while (true)
         {
             cout << endl;
-            cout << " ‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣\n";
-            cout << "Ingrese el primer nombre: \n ";
-            cout << " ‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣\n";
+            cout << "‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣";
+            cout << "Ingrese el primer nombre:  ";
+            cout << "‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣";
             getline(cin, nombresUNA[numeroestudianteUNA]);
             if (!soloLetrasSinEspaciosUNA(nombresUNA[numeroestudianteUNA]))
             {
@@ -233,7 +233,7 @@ int main()
         {
 
             cout << endl;
-            cout << "Ingrese el segundo apellido: \n";
+            cout << "Ingrese el segundo apellido:";
             getline(cin, segundoApellidoUNA[numeroestudianteUNA]);
             if (!soloLetrasSinEspaciosUNA(segundoApellidoUNA[numeroestudianteUNA]))
             {
