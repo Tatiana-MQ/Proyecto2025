@@ -283,7 +283,7 @@ int main()
             {
                 setColor(4, 0);
                 cout << endl;
-                cout << "Error, la cedula debe contener exactamente 9 digitos y numericos \n";
+                cout << "Error, la cedula debe contener exactamente 9 digitos numericos y evitar los espacios. \n";
                 setColor(7, 0);
             }
             else
