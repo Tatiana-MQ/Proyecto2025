@@ -16,19 +16,6 @@ void setColor(int texto, int fondo)
     SetConsoleTextAttribute(hConsole, (fondo << 4) | texto);
 }
 
-// Esto es una funcion para validar que un string tenga solo letras y no tenga espacios
-bool soloLetrasSinEspaciosUNA(const string &textoUNA)
-{
-    for (char letraUNA : textoUNA)
-    {
-        if (!isalpha(letraUNA))
-            return false; // Si hay algo que no sea letra, falso
-    }
-    if (textoUNA.find(' ') != string::npos)
-        return false; // Si hay espacios, falso
-    return true;
-}
-
 // Funcion para validar que un string tenga solo digitos
 bool soloDigitosUNA(const string &textoUNA)
 {
