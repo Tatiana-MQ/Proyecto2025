@@ -42,6 +42,7 @@ bool soloDigitosUNA(const string &textoUNA)
 
 int main()
 {
+    // Aca creamos las variables para medir los intentos en el inicio
     int cantidaddeestudiantesUNA = 0;
     int intentosUNA = 0;
     const int maxIntentosUNA = 5;         // Aca es lo de maximo 5 intentos para ingresar bien
