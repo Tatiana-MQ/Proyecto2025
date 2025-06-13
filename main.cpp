@@ -347,7 +347,7 @@ int main()
     cout << "═══════════════════════════════════════════════════════════════════════════════\n";
     setColor(7, 0);
     int indiceaprobadoUNA = 0;
-
+    // Aca se hace un while, para verificar si es mayor y mostrar si aprobo
     while (indiceaprobadoUNA < cantidaddeestudiantesUNA)
     {
         if (estadosUNA[indiceaprobadoUNA] == "Aprobado")
@@ -370,7 +370,7 @@ int main()
     setColor(7, 0);
     cout << endl;
     int indicereprobadoUNA = 0;
-
+    // Aca hacemos un while para que se cumpla, lo de mostrar Reprobado
     while (indicereprobadoUNA < cantidaddeestudiantesUNA)
     {
         if (estadosUNA[indicereprobadoUNA] == "Reprobado")
