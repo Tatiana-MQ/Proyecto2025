@@ -261,7 +261,7 @@ int main()
             {
                 setColor(4, 0);
                 cout << endl;
-                cout << "Error, en la UNA no existe este ciclo, solo del 1 al 8\n";
+                cout << "Error, en la UNA no existe este ciclo, solo del 1 al 8, y recuerda no ingresar espacios o letras. \n";
                 setColor(7, 0);
                 cin.clear();
                 cin.ignore(1000, '\n');
