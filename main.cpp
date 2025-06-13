@@ -27,6 +27,14 @@ bool soloDigitosUNA(const string &textoUNA)
     return true;
 }
 
+bool soloLetrasSinEspaciosUNA(const string& textoUNA) {
+    for (char letraUNA : textoUNA) {
+        if (!isalpha(letraUNA)) return false;  // Si hay algo que no sea letra, falso
+    }
+    if (textoUNA.find(' ') != string::npos) return false; // Si hay espacios, falso
+    return true;
+}
+
 int main()
 {
     // Aca creamos las variables para medir los intentos en el inicio
@@ -181,9 +189,6 @@ int main()
         while (true)
         {
             cout << endl;
-
-            cout << "Ingrese el primer nombre:";
-
             cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
             cout << "Ingrese el primer nombre: ";
             
