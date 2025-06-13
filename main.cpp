@@ -48,7 +48,7 @@ int main()
     const int maxIntentosUNA = 5;         // Aca es lo de maximo 5 intentos para ingresar bien
     const int limiteestudiantesUNA = 100; // Esto es el limite de estudiantes
     cout << endl;
-
+    // Aca usamos el primer setColor, y se logra con la libreria de windows
     setColor(2, 0);
     cout << "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n";
     cout << right << setw(40) << "Bienvenido al programa" << endl;
