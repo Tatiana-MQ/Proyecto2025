@@ -49,7 +49,7 @@ int main()
     const int limiteestudiantesUNA = 100; // Esto es el limite de estudiantes
     cout << endl;
     // Aca usamos el primer setColor, y se logra con la libreria de windows
-    setColor(2, 0);
+    setColor(5, 0);
     cout << "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n";
     cout << right << setw(40) << "Bienvenido al programa" << endl;
     cout << "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n";
@@ -60,7 +60,9 @@ int main()
     {
         cout << endl;
         cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬" << endl;
-        cout << "Ingrese el numero de estudiantes para agregar sus notas (entre 1 y " << limiteestudiantesUNA << "):";
+        cout << "Ingrese el numero de estudiantes para agregar sus notas (entre 1 y " << limiteestudiantesUNA << "):\n";
+        cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬" << endl;
+
         cin >> cantidaddeestudiantesUNA;
 
         if (cin.fail())
@@ -69,21 +71,21 @@ int main()
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << endl;
             setColor(4, 0);
-            cout << "⇒Eso no es un numero, intentelo de nuevo" << endl;
+            cout << "⇒ Eso no es un numero, intentelo de nuevo" << endl;
             setColor(7, 0);
             intentosUNA++;
         }
         else if (cantidaddeestudiantesUNA <= 0 || cantidaddeestudiantesUNA > limiteestudiantesUNA)
         {
             cout << endl;
-            cout << "⇒El numero debe estar entre 1 y " << limiteestudiantesUNA << endl;
+            cout << "⇒ El numero debe estar entre 1 y " << limiteestudiantesUNA << endl;
             intentosUNA++;
         }
         else
         {
             char respuestaUNA;
             cout << endl;
-            cout << "⇒Esta seguro que desea evaluar " << cantidaddeestudiantesUNA << " estudiantes de la UNA? (S/N): ";
+            cout << "⇒ Esta seguro que desea evaluar " << cantidaddeestudiantesUNA << " estudiantes de la UNA? (S/N): ";
             cin >> respuestaUNA;
             respuestaUNA = toupper(respuestaUNA);
 
@@ -130,7 +132,7 @@ int main()
             }
             else
             {
-                setColor(4, 0);
+                setColor(6, 0);
                 cout << "Error: respuesta no válida. Por favor ingrese 'S' o 'N'." << endl;
                 setColor(7, 0);
 
@@ -183,14 +185,22 @@ int main()
 
     while (numeroestudianteUNA < cantidaddeestudiantesUNA)
     {
-        setColor(1, 2);
-        cout << "\n◌◌◌◌◌◌◌◌◌◌◌◌◌◌ Estudiante # " << (numeroestudianteUNA + 1) << " ◌◌◌◌◌◌◌◌◌◌◌◌◌◌\n";
+
+        setColor(7, 3);
+        cout << "\n◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌ Estudiante # " << (numeroestudianteUNA + 1) << " ◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌◌\n";
+
         setColor(7, 0);
 
         while (true)
         {
             cout << endl;
+
             cout << "Ingrese el primer nombre:";
+
+            cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+            cout << "Ingrese el primer nombre: ";
+            
+
             getline(cin, nombresUNA[numeroestudianteUNA]);
             if (!soloLetrasSinEspaciosUNA(nombresUNA[numeroestudianteUNA]))
             {
@@ -210,6 +220,7 @@ int main()
         while (true)
         {
             cout << endl;
+            cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
             cout << "Ingrese el primer apellido:";
             getline(cin, primerApellidoUNA[numeroestudianteUNA]);
             if (!soloLetrasSinEspaciosUNA(primerApellidoUNA[numeroestudianteUNA]))
@@ -230,6 +241,7 @@ int main()
         {
 
             cout << endl;
+            cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
             cout << "Ingrese el segundo apellido:";
             getline(cin, segundoApellidoUNA[numeroestudianteUNA]);
             if (!soloLetrasSinEspaciosUNA(segundoApellidoUNA[numeroestudianteUNA]))
@@ -251,6 +263,7 @@ int main()
         while (true)
         {
             cout << endl;
+            cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
             cout << "Ingrese el ciclo de estudio en la nacional (entre 1 y 8): ";
             cin >> ciclosUNA[numeroestudianteUNA];
 
@@ -272,10 +285,10 @@ int main()
         {
             string cedulaTemporalUNA;
             cout << endl;
+            cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
             cout << "Ingrese numero de cedula (9 digitos):";
             cin >> cedulaTemporalUNA;
-            cout << "═══════════════════════════════════════════════════════════";
-
+            
             if (!soloDigitosUNA(cedulaTemporalUNA) || cedulaTemporalUNA.length() != 9)
             {
                 setColor(4, 0);
@@ -297,7 +310,10 @@ int main()
             while (true)
             {
                 cout << endl;
+                setColor(3,0);
+                cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
                 cout << "Ingrese nota del examen #" << (numeroexamenUNA + 1) << " (0-100): ";
+                setColor(7,0);
                 cin >> notasUNA[numeroestudianteUNA][numeroexamenUNA];
 
                 if (cin.fail() || notasUNA[numeroestudianteUNA][numeroexamenUNA] < 0 || notasUNA[numeroestudianteUNA][numeroexamenUNA] > 100)
@@ -336,12 +352,14 @@ int main()
 
     cout << fixed << setprecision(2);
     setColor(2, 0);
-    cout << "\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬APROBADOS▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-    cout << left << setw(30) << "✦Nombre completo"
-         << setw(10) << "✦Ciclo"
-         << setw(15) << "✦Cedula"
-         << setw(10) << " ✦Promedio" << endl;
-    cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+    cout << "\n――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――\n";
+    cout << "                                  APR0BADOS                                   "<<endl;
+    cout << "\n――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――\n";
+    cout << left << setw(30) << "✦ Nombre completo"
+         << setw(9) << "  ✦ Ciclo"
+         << setw(15) << "   ✦ Cedula"
+         << setw(10) << "     ✦ Promedio" << endl;
+    cout << "――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――\n";
     setColor(7, 0);
     int indiceaprobadoUNA = 0;
     // Aca se hace un while, para verificar si es mayor y mostrar si aprobo
@@ -358,14 +376,15 @@ int main()
         indiceaprobadoUNA++;
     }
     setColor(4, 0);
-    cout << "\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬REPROBADOS▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-    cout << left << setw(30) << "✦Nombre completo"
-         << setw(10) << "✦Ciclo"
-         << setw(15) << "✦Cedula"
-         << setw(10) << " ✦Promedio" << endl;
-    cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+    cout << "\n――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――\n";
+    cout << "                                 REPROBADOS                                   "<<endl;
+    cout << "\n――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――\n";
+    cout << left << setw(30) << "✦ Nombre completo"
+         << setw(9) << "  ✦ Ciclo"
+         << setw(15) << "   ✦ Cedula"
+         << setw(10) << "     ✦ Promedio" << endl;
+    cout << "――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――\n";
     setColor(7, 0);
-    cout << endl;
     int indicereprobadoUNA = 0;
     // Aca hacemos un while para que se cumpla, lo de mostrar Reprobado
     while (indicereprobadoUNA < cantidaddeestudiantesUNA)
