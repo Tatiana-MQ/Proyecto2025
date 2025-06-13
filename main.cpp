@@ -61,7 +61,6 @@ int main()
         cout << endl;
         cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬" << endl;
         cout << "Ingrese el numero de estudiantes para agregar sus notas (entre 1 y " << limiteestudiantesUNA << "):";
-        cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬" << endl;
         cin >> cantidaddeestudiantesUNA;
 
         if (cin.fail())
@@ -184,16 +183,14 @@ int main()
 
     while (numeroestudianteUNA < cantidaddeestudiantesUNA)
     {
-        setColor(0, 2);
+        setColor(1, 2);
         cout << "\n◌◌◌◌◌◌◌◌◌◌◌◌◌◌ Estudiante # " << (numeroestudianteUNA + 1) << " ◌◌◌◌◌◌◌◌◌◌◌◌◌◌\n";
         setColor(7, 0);
 
         while (true)
         {
             cout << endl;
-            cout << "‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣";
-            cout << "Ingrese el primer nombre:  ";
-            cout << "‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣";
+            cout << "Ingrese el primer nombre:";
             getline(cin, nombresUNA[numeroestudianteUNA]);
             if (!soloLetrasSinEspaciosUNA(nombresUNA[numeroestudianteUNA]))
             {
