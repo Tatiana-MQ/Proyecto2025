@@ -192,7 +192,7 @@ int main()
         {
             cout << endl;
             cout << " ‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣\n";
-            cout << "Ingrese el primer nombre: ";
+            cout << "Ingrese el primer nombre: \n ";
             cout << " ‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣‣\n";
             getline(cin, nombresUNA[numeroestudianteUNA]);
             if (!soloLetrasSinEspaciosUNA(nombresUNA[numeroestudianteUNA]))
@@ -200,9 +200,9 @@ int main()
 
                 setColor(4, 0);
                 cout << endl;
-                cout << "▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶\n";
+                cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
                 cout << "Error, el nombre debe contener solo letras y no puede tener espacios\n";
-                cout << "▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶\n";
+                cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
                 setColor(7, 0);
             }
             else
@@ -219,9 +219,9 @@ int main()
             {
                 cout << endl;
                 setColor(4, 0);
-                cout << "▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶\n";
+                cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
                 cout << "Error, el primer apellido debe contener solo letras y no puede tener espacios\n";
-                cout << "▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶\n";
+                cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
                 setColor(7, 0);
             }
             else
@@ -233,16 +233,16 @@ int main()
         {
 
             cout << endl;
-            cout << "Ingrese el segundo apellido:";
+            cout << "Ingrese el segundo apellido: \n";
             getline(cin, segundoApellidoUNA[numeroestudianteUNA]);
             if (!soloLetrasSinEspaciosUNA(segundoApellidoUNA[numeroestudianteUNA]))
             {
 
                 cout << endl;
                 setColor(4, 0);
-                cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n";
-                cout << "Error, el segundo apellido debe contener solo letras y no puede tener espacios\n";
-                cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n";
+                cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n";
+                cout << "Error, el segundo apellido debe contener solo letras y no puede tener espacios \n";
+                cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n";
                 setColor(7, 0);
             }
             else
@@ -339,12 +339,12 @@ int main()
 
     cout << fixed << setprecision(2);
     setColor(2, 0);
-    cout << "\n══════════════════════════════════APROBADOS══════════════════════════════════\n";
+    cout << "\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬APROBADOS▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
     cout << left << setw(30) << "✦Nombre completo"
          << setw(10) << "✦Ciclo"
          << setw(15) << "✦Cedula"
          << setw(10) << " ✦Promedio" << endl;
-    cout << "═══════════════════════════════════════════════════════════════════════════════\n";
+    cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
     setColor(7, 0);
     int indiceaprobadoUNA = 0;
     // Aca se hace un while, para verificar si es mayor y mostrar si aprobo
@@ -361,12 +361,12 @@ int main()
         indiceaprobadoUNA++;
     }
     setColor(4, 0);
-    cout << "\n═════════════════════════════════REPROBADOS═════════════════════════════════\n";
+    cout << "\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬REPROBADOS▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
     cout << left << setw(30) << "✦Nombre completo"
          << setw(10) << "✦Ciclo"
          << setw(15) << "✦Cedula"
          << setw(10) << " ✦Promedio" << endl;
-    cout << "══════════════════════════════════════════════════════════════════════════════\n";
+    cout << "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
     setColor(7, 0);
     cout << endl;
     int indicereprobadoUNA = 0;
